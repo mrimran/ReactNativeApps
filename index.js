@@ -6,8 +6,10 @@ import AlbumList from './src/components/AlbumList';
 
 //create a component
 const App = () => {
+    //Flex: 1 to expand the scrollable view to the top to 
+    //end otherwise that may not be completely scrollable
     return (
-        <View>
+        <View style={{flex: 1}}>
             <Header text="Albums" />
             <AlbumList />
         </View>
